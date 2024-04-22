@@ -1,0 +1,30 @@
+body{
+  background: #9796f0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'oswald';
+  height: 100vh;
+}
+.list-areas{
+  margin-top: 30px;
+  display: flex;
+  flex-direction:column;
+  margin-bottom: 10px;
+}
+.titulo{
+  display: flex;
+  justify-content: center;
+}
+h1{
+  text-align: center;
+  border-top: 1px solid #9796f0;
+}
+.col-sm-8{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.content-wrapper{
+  display: flex;
+  justify-content: center;
+}

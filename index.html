@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+    <title>Banco</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row content-wrapper">
+      <div class="col-sm-8">
+        <div class="row titulo">
+          <h1>"Banco"</h1>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>Empleado</h2>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="cargo">Cargo</label>
+              <input type="text" class="form-control" id="cargo" name="cargo">
+            </div>
+            <div class="form-group">
+              <label for="Sueldo">Sueldo (S/)</label>
+              <input type="number" class="form-control" id="sueldo" name="Sueldo" step="any" value="0">
+            </div>
+            <div class="form-group">
+              <label for="cboArea">Area</label>
+              <select class="form-control" id="cboArea" name="cboArea">
+                <option value="administracion">Administracion</option>
+                <option value="contaduria">Contaduria</option>
+                <option value="caja">Caja</option>
+                <option value="gerencia">Gerencia</option>
+                <option value="RRHH">RRHH</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btnAceptar" style="width: 100%;">Aceptar</button>
+          
+          </div>
+          <div class="col-sm-6">
+            <div class="row" >
+              <div class="col-sm-12 list-areas" >
+                <label for="Sueldo">Areas</label>
+                <button type="button" class="btn btn-primary">
+                  Administracion <span class="badge badge-light" id="bAdministracion">0</span>
+                </button>
+                <button type="button" class="btn btn-secondary">
+                  Contaduria <span class="badge badge-light" id="bContaduria" >0</span>
+                </button>
+                <button type="button" class="btn btn-success">
+                  Caja <span class="badge badge-light" id="bCaja" >0</span>
+                </button>
+                <button type="button" class="btn btn-danger">
+                  RRHH <span class="badge badge-light" id="bRRHH" >0</span>
+                </button>
+                <button type="button" class="btn btn-dark">
+                  Gerencia <span class="badge badge-light" id="bGerencia">0</span>
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <label for="Sueldo">Sueldo Total (S/)</label>
+                <input type="number" class="form-control" disabled id="SueldoTotal" name="Sueldo" step="any" value="0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
